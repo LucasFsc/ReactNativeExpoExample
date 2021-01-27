@@ -7,8 +7,8 @@ import shortid from "shortid"
 
 export default () => (
   <Container flex={1} alignItems="center" justifyContent="center">
-    {animationConfig.map(({ ...props }) => (
-      <AnimatedIcon key={shortid.generate()} {...props} />
+    {animationConfig.map(({ ...props }, index) => (
+      <AnimatedIcon key={shortid.generate()} {...props} index={index} quantity={animationConfig.length} />
     ))}
     <Avatar
         containerStyle={{

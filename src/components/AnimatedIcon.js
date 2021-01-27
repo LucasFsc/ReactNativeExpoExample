@@ -1,16 +1,18 @@
 import React, { useEffect, useRef } from "react"
 import { Animated, View, useWindowDimensions } from "react-native"
 import { FontAwesome5 as Icon } from "@expo/vector-icons"
+import { height } from "styled-system"
 
 export default ({
   name,
   size = 48,
   color = "black",
   initialDelay = 0,
-  initialXPosition = "50%",
   duration = 3000,
+  index,
+  quantity,
 }) => {
-  const { width } = useWindowDimensions()
+  const { height, width } = useWindowDimensions()
 
   const animatedValue = useRef(new Animated.Value(0)).current
 
@@ -40,12 +42,12 @@ export default ({
       style={{
         position: "absolute",
         top: 0,
-        left: initialXPosition || width / 2 - size / 2,
+        left: (width / quantity) * index + (width / quantity / 2 - size / 2),
         transform: [
           {
             translateY: animatedValue.interpolate({
               inputRange: [0, 1],
-              outputRange: [size * -1, 250],
+              outputRange: [size * -1, height / 2],
             }),
             rotateZ: animatedValue.interpolate({
               inputRange: [0, 1],
