@@ -1,28 +1,28 @@
-import React from "react"
-import { NavigationContainer } from "@react-navigation/native"
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { Welcome, AboutMe } from "./screens"
-import { Feather as Icon } from "@expo/vector-icons"
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Feather as Icon } from '@expo/vector-icons'
+import { Welcome, AboutMe } from './screens'
 
-const Tab = createBottomTabNavigator()
+const { Navigator, Screen } = createBottomTabNavigator()
 
 export default () => (
   <NavigationContainer>
-    <Tab.Navigator>
-      <Tab.Screen
+    <Navigator>
+      <Screen
         name="Welcome"
         component={Welcome}
         options={{
-          tabBarIcon: ({ ...props }) => <Icon name="home" {...props} />,
+          tabBarIcon: ({ ...props }) => <Icon name="home" {...props} />
         }}
       />
-      <Tab.Screen
+      <Screen
         name="About me"
         component={AboutMe}
         options={{
-          tabBarIcon: ({ ...props }) => <Icon name="at-sign" {...props} />,
+          tabBarIcon: ({ ...props }) => <Icon name="at-sign" {...props} />
         }}
       />
-    </Tab.Navigator>
+    </Navigator>
   </NavigationContainer>
 )
