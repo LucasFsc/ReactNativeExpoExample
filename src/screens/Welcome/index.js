@@ -1,6 +1,6 @@
 import React from 'react'
 import { Avatar } from 'react-native-elements'
-import { Container, Space, Text } from '../../components'
+import { Container, Space, Text } from '~/components'
 
 export default () => (
   <Container flex={1} alignItems="center" justifyContent="center">

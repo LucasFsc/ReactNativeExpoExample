@@ -2,7 +2,7 @@ import React from 'react'
 import { ScrollView } from 'react-native'
 import { Divider } from 'react-native-elements'
 import { FontAwesome5 as Icon } from '@expo/vector-icons'
-import { Container, Space, Text } from '../../components'
+import { Container, Space, Text } from '~/components'
 import { IconText } from './elements'
 
 export default () => (

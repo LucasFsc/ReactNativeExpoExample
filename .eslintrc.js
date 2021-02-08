@@ -26,5 +26,13 @@ module.exports = {
     'no-console': ['error', { allow: ['tron'] }],
     'react/no-unescaped-entities': 'off',
     'react/jsx-props-no-spreading': 'off'
+  },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'src'
+      }
+    }
   }
 }
