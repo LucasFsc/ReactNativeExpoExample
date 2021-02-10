@@ -130,8 +130,6 @@ Below you can find a list of commands and steps that will make the bed for you.
     </p>
   </details>
 
-  <br/>
-
 - Then select your visual framework, mine was [React Native Elements](https://reactnativeelements.com/docs/), and follow its instructions.
 
 - For navigation our old friend [React Navigation](https://reactnavigation.org/).
