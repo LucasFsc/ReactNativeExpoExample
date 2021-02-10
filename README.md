@@ -10,7 +10,7 @@ This app covers basic concepts, making use of some important daily development l
 
 Below you can find a list of commands and steps that will make the bed for you.
 
-- First of all make sure you have [Expo CLI](https://expo.io/) installed, then start your app:
+- First of all make sure you have [Expo CLI](https://expo.io/) installed, then initialize your app:
 
   ```sh
   expo init my-project
