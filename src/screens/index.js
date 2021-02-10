@@ -1,4 +1,4 @@
-import AboutMe from "./AboutMe"
-import Welcome from "./Welcome"
+import AboutMe from './AboutMe'
+import Welcome from './Welcome'
 
 export { AboutMe, Welcome }
